@@ -1,0 +1,149 @@
+body{
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(dark-red.jpg); */
+    overflow-y: auto;   
+    background-size: cover  ; 
+}
+.h{
+    height: 300px;
+    width: 300px;
+    margin-top: 11%;
+    margin-left: 40%;
+    background-color: red;  
+    border-radius: 150px;
+    transition: all 0.6s;
+}
+.h:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    transform:translate3d(10px);
+    box-shadow: 0 0 40px rgb(222, 0, 0,0.4);
+    color: red;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+.a{
+    height:50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: red;
+    margin: 3%;
+    transition: all 0.6s;
+}
+.k{
+    height:50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: red;
+    margin: 3%;
+    transition: all 0.6s;
+}
+.k:hover{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 5px rgb(222, 0, 0);
+    color: red;
+}
+
+.a:hover{
+    background-color: rgb(0, 0, 0);
+    transform:translate3d(10px);
+    box-shadow: 0 0 40px rgb(222, 0, 0);
+    color: red;
+}
+.ico:hover{
+    color: red;
+}
+.s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.num{
+    margin-right: 5%;
+}
+
+.txt{
+
+    font-size: 50px;
+}
+#sml-txt{
+    margin-left: 100%;
+    margin-bottom:50px;
+}
+.laps-made{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: azure;
+    justify-content: center;
+    height: 13%;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    transition: all 0.5s ease;
+
+    border: 1px solid red;
+    border-radius: 20px;
+    margin-right: 40%;
+    margin-left: 40%;
+    height:45px;
+    margin-bottom: 1%;
+}
+.list:hover{
+    background-color: red;
+    color: black;
+}
+.hide{
+    visibility: hidden;
+}
+.text{
+    display: inline-block;
+}
+.btn{
+    
+    color: red;
+    transition: all 0.5s ease;
+    background-color: black;
+    border: 1px solid red;
+    border-radius: 20%;
+    height:35px;
+    margin-left: 48%;
+    margin-bottom: 6%;
+}
+.btn:hover{
+    background-color: red;
+    color: black;
+}
+.back-ground{
+    display: flex;
+}
+.bubbles{
+    height: 20px;
+    width: 20px;
+    margin-right: 5%;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 2px 1px 12px 4px rgba(255, 0, 0, 0.441);
+    animation: animate 20s linear infinite;
+    animation-duration: calc(100s/ var(--i));
+}
+@keyframes animate{
+    0%{
+        transform:  translateY(100vh) scale(0.1);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
